@@ -1,0 +1,431 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#main-formulario, main {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(futbol.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-inicio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-formulario {
+  height: 1100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, button:hover {
+  color: black;
+}
+
+header a:hover, p a:hover {
+  color: white;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  border-bottom: 2px solid white;
+  position: fixed;
+  min-width: 100%;
+  height: 100px;
+  z-index: 1000;
+}
+
+header img {
+  width: 90px;
+  height: 90px;
+}
+
+main h1 {
+  font-weight: bolder;
+  color: white;
+font-family: 'Merriweather Sans', sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+#main-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 820px;
+}
+
+#main-inicio h4 {
+font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+#main-inicio button {
+  margin-top: 30px;
+  font-family: 'Merriweather Sans', sans-serif;
+  height: 50px;
+  width: 150px;
+font-size: 18px;
+background-color: transparent;
+color: white;
+border: 3px solid white;
+border-radius: 20px;
+cursor: pointer;
+}
+
+#main-inicio button:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+#logo-abajo {
+  height: 100px;
+  width: 100px ;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100px;
+  font-size: 45px;
+  background-color: black;
+  color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.square h4 {
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+  border-top: 2px solid white;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+form {
+  width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'Outfit', sans-serif;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border:2px solid white;
+  font-size: 20px;
+  height: 800px;
+}
+
+#main-preg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(fondo3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+#boton-input {
+  width: 600px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#menu-icon {
+      display: none;
+      cursor: pointer;
+      font-size: 35px;
+    }
+
+.container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  flex-wrap: wrap;
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal cuando el contenido excede el ancho del contenedor */
+  max-width: 100%; /* Limita el ancho máximo del contenedor */
+}
+
+.menu-item.active {
+  text-decoration: underline;
+}
+
+.square.open {
+  height: auto;
+  max-height: none;
+}
+
+.square {
+  margin: 10px;
+  width: 100%;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  height: 50px; /* Establece una altura fija para los cuadrados */
+  margin: 10px; /* Ajusta el margen */
+  margin-top: 20px;
+  text-align: center;
+  max-height: 70px; /* establece la altura máxima inicial */
+  overflow: hidden; /* oculta el contenido que sobrepasa la altura máxima */
+  max-width: 800px; /* establece el ancho máximo inicial */
+  overflow: hidden; /* oculta el contenido que sobrepasa el ancho máximo */
+  cursor:pointer;
+}
+
+.square h4 {
+  font-size: 23px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.square p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#secc {
+  max-width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Tu CSS actual */
+.square .answer {
+  display: none;
+}
+
+.square.open .answer {
+  max-height: 1000px; /* Establece una altura máxima alta para mostrar completamente la respuesta */
+    transition: max-height 0.5s ease; /* Agrega una transición suave al cambio de altura */
+
+}
+
+.answer {
+  max-height: 0; /* Oculta la respuesta inicialmente */
+  overflow: hidden; /* Oculta cualquier contenido que sobrepase la altura máxima */
+  transition: 0.5s ease; /* Añade una transición suave */
+}
+
+.answer.open {
+  max-height: 1000px;
+}
+
+#texto-animado {
+  font-size: 60px;
+  text-align: center;
+  overflow: hidden; /* Oculta las letras que aún no han aparecido */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  animation: escribir 6s linear infinite; /* Animación de escribir */
+}
+
+
+/* Definición de la animación de escribir */
+@keyframes escribir {
+  0% { width: 0; } /* Ancho inicial (sin texto) */
+  25% { width: 100%; } /* Ancho completo (texto visible) */
+  50% { width: 100%; } /* Mantener el texto visible */
+  75% { width: 0; } /* Ocultar el texto */
+  100% { width: 0; } /* Ancho cero (sin texto) */
+}
+
+/* Añade una transición para el texto */
+#texto-animado {
+  transition: opacity 0.5s ease;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+#texto-animado {
+  font-size: 50px;
+  text-align: center;
+  overflow: hidden; /* Oculta las letras que aún no han aparecido */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  animation: escribir 6s linear infinite; /* Animación de escribir */
+}
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+header.menu-open {
+  justify-content: space-between; /* Alinea elementos al inicio y al final */
+}
+
+  nav {
+    width: 100%;
+  }
+
+  #menu {
+    display:none;  
+  }
+
+  nav ul.show {
+  display: flex;
+}
+
+  nav ul {
+    flex-direction: column;
+    font-size: 40px;
+    position: static;
+  }
+
+  nav li {
+    text-align: center;
+    margin: 0;
+  }
+
+  nav a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+
+#menu-icon {
+        display: block;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 53px;
+        left: 0;
+        font-size: 20px;
+        background-color: black;
+        color: black;
+        width: 100%;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+    }
+
+  nav ul.show {
+    display: flex;
+  }
+  form {
+    width: 300px;
+    height: auto;
+}
+
+form #boton-input {
+  width: 300px;
+}
+
+main {
+  height: 700px;
+}
+
+h2 {
+ display: flex;
+ justify-content: center;
+ color:white;
+ font-size: 30px;
+ padding: 10px;
+}
+
+}
+
